@@ -16,6 +16,7 @@ const TimezoneSelector = () => {
 
   const timeZonesArray = getUTC();
   const [selectedTimeZones, setSelectedTimeZones] = useState([]);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const selectedValue = e.target.selector.value;
@@ -25,6 +26,11 @@ const TimezoneSelector = () => {
       setSelectedTimeZones([...selectedTimeZones, selectedValue]);
     }
     e.target.reset();
+  };
+  const handleDeleteTimeZone = (timeZoneToDelete) => {
+    setSelectedTimeZones((prevTimeZones) =>
+      prevTimeZones.filter((zone) => zone !== timeZoneToDelete),
+    );
   };
   return (
     <>
@@ -43,10 +49,20 @@ const TimezoneSelector = () => {
         </form>
       </div>
       <div className="timezones-list">
-        Selected UTC's:{" "}
+        Selected UTC&rsquo;s
         <ul>
           {selectedTimeZones.map((zone, index) => (
-            <li key={index}>{zone}</li>
+            <li key={index}>
+              {zone}{" "}
+              <button
+                className="x-button"
+                onClick={() => {
+                  handleDeleteTimeZone(zone);
+                }}
+              >
+                X
+              </button>
+            </li>
           ))}
         </ul>
       </div>

@@ -37,7 +37,8 @@ body {
   display: flex;
   justify-content: center;
 }
-.submit {
+.submit,
+.x-button {
   cursor: pointer;
   color: bisque;
   font-family: inherit;
@@ -48,8 +49,15 @@ body {
   border-radius: 8px;
   background-color: rgba(150, 140, 155, 0.658);
 }
+.x-button {
+  width: 25px;
+  height: 25px;
+}
 .submit:hover {
   background-color: rgba(150, 140, 155, 0.43);
+}
+.x-button:hover {
+  background-color: rgba(188, 7, 7, 0.701);
 }
 form {
   font: inherit;
