@@ -50,7 +50,7 @@ body {
   background-color: rgba(150, 140, 155, 0.658);
 }
 .x-button {
-  width: 25px;
+  width: fit-content;
   height: 25px;
 }
 .submit:hover {
@@ -68,8 +68,9 @@ form {
   align-items: center;
 }
 select {
+  cursor: pointer;
   opacity: 0.9;
-  -webkit-appearance: none;
+
   border: none;
   text-align: center;
   border-radius: 10px;
@@ -93,6 +94,15 @@ select::-webkit-scrollbar-thumb {
 .timezones-list {
   padding: 30px;
   margin-top: 50px;
+}
+
+li {
+  border: 1px solid #fdfdfd;
   border-radius: 10px;
-  background-color: rgba(16, 29, 57, 0.171);
+}
+li:hover {
+  border: 1px solid #414244;
+}
+.clock {
+  font-size: larger;
 }

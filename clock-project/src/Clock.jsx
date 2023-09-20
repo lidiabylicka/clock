@@ -27,7 +27,6 @@ const Clock = ({ timeZone }) => {
       <div className="clock">
         Time in {timeZone}: {currentTime}
       </div>
-      <h3>Clock.jsx has to display time for each UTC</h3>
     </>
   );
 };
