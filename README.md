@@ -20,7 +20,7 @@ ClockList - komponent wyświetlający listę zegarów.
 
 # Wskazówki do realizacji:
 
-App:
+<!-- App:
 
 - Przechowuje listę stref czasowych, które mają być wyświetlane (np. ["UTC", "UTC+1", "UTC-1"]). OK
 - Dostarcza funkcje do dodawania i usuwania stref z listy. OK
@@ -29,17 +29,17 @@ TimezoneSelector:
 
 - Posiada własny stan dla aktualnie wybranej strefy czasowej. OK
 - Umożliwia wybór strefy czasowej z rozwijanej listy (zwykły input select). OK
-- Przycisk "Dodaj" dodaje wybraną strefę do listy w komponencie App. OK
+- Przycisk "Dodaj" dodaje wybraną strefę do listy w komponencie App. OK -->
 
-Clock:
+<!-- Clock:
 
 - Otrzymuje strefę czasową jako props.
-- Wykorzystuje useEffect i useState do zarządzania czasem
+- Wykorzystuje useEffect i useState do zarządzania czasem -->
 
 ClockList:
 
 - Otrzymuje listę stref czasowych z App i dla każdej strefy renderuje komponent Clock.
-- Dla każdego zegara jest przycisk "Usuń", który usuwa zegar ze strefą z listy.
+<!-- - Dla każdego zegara jest przycisk "Usuń", który usuwa zegar ze strefą z listy. -->
 
 # dla chętnych!
 
